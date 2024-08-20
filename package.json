@@ -1,0 +1,43 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "fix:eslint": "eslint --ext .js,.vue resources/js/ --fix",
+        "fix:prettier": "prettier --write --loglevel warn 'resources/js/**/*.vue'",
+        "fix-code-style": "npm run fix:prettier && npm run fix:eslint",
+        "heroku-postbuild": "npm run build",
+        "dev": "vite",
+        "build": "vite build && vite build --ssr"
+    },
+    "devDependencies": {
+        "@inertiajs/vue3": "^1.0.0",
+        "@popperjs/core": "^2.11.0",
+        "@tailwindcss/forms": "^0.5.3",
+        "@vitejs/plugin-vue": "^5.0.0",
+        "@vue/server-renderer": "^3.2.27",
+        "autoprefixer": "^10.4.20",
+        "eslint": "^8.4.1",
+        "eslint-plugin-vue": "^8.2.0",
+        "laravel-vite-plugin": "^1.0",
+        "lodash": "^4.17.21",
+        "postcss": "^8.4.41",
+        "prettier-plugin-tailwind": "^2.2.12",
+        "tailwindcss": "^3.4.9",
+        "uuid": "^8.3.2",
+        "vite": "^5.0",
+        "vue": "^3.4.0"
+    },
+    "dependencies": {
+        "@heroicons/vue": "^2.1.5",
+        "@inertiajs/inertia": "^0.11.1",
+        "@inertiajs/inertia-vue3": "^0.6.0",
+        "axios": "^1.7.4",
+        "flowbite": "^2.5.1",
+        "flowbite-vue": "^0.1.5",
+        "pinia": "^2.2.2",
+        "simple-datatables": "^9.0.4",
+        "uuid": "^10.0.0",
+        "vue-route": "^1.5.1",
+        "vue-router": "^4.4.3"
+    }
+}
